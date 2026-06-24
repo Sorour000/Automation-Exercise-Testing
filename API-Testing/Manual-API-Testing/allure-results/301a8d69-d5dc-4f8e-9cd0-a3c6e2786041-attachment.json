@@ -1,0 +1,20 @@
+{
+    "Date": "Wed, 24 Jun 2026 01:15:11 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Vary": "Accept,Cookie,Accept-Encoding",
+    "Referrer-Policy": "same-origin",
+    "X-Frame-Options": "DENY",
+    "X-Content-Type-Options": "nosniff",
+    "Allow": "POST, OPTIONS",
+    "X-Powered-By": "Phusion Passenger(R) 6.1.2",
+    "Status": "200 OK",
+    "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "Server": "cloudflare",
+    "Cf-Cache-Status": "DYNAMIC",
+    "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nC7DxlqVstV8xmaBUR4hp9zu9HUhbfshyL15yrr7rp9amicfwc%2Bf9MQIKtQa9TA0Kae%2FMm3KCLs4zEEPbyb4eG3%2F6DNl6ytZ4WuUKiMesxDNvIsUQJ74OqzgaT8UuOP8zgEw1vpLtEjQ\"}]}",
+    "Content-Encoding": "br",
+    "CF-RAY": "a107e1435d55e1e4-MRS",
+    "alt-svc": "h3=\":443\"; ma=86400"
+}

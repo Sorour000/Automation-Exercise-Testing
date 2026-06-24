@@ -1,0 +1,1 @@
+{"responseCode": 400, "message": "Bad request, city parameter is missing in POST request."}
