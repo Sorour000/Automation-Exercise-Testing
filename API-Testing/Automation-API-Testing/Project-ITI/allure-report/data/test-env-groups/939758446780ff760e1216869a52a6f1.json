@@ -1,0 +1,1 @@
+{"id":"939758446780ff760e1216869a52a6f1","fullName":"CreateAccountApiTests.validateCreateAccountWithoutMobileNumberReturnsError","name":"Validate POST Create Account without mobile number returns error","status":"passed","testResultsByEnv":{"default":"7798e8ed83de9033b00a768de0597bda"}}

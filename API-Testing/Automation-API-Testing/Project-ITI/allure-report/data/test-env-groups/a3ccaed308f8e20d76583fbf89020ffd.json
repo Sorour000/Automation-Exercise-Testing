@@ -1,0 +1,1 @@
+{"id":"a3ccaed308f8e20d76583fbf89020ffd","fullName":"CreateAccountApiTests.validateCreateAccountWithSpecialCharactersOnlyLastnameReturnsError","name":"Validate POST Create Account with special characters-only lastname returns error","status":"failed","testResultsByEnv":{"default":"bf30d1cf5968cf99ae41fb901e81113b"}}

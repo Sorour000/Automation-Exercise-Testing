@@ -1,0 +1,1 @@
+{"id":"a3c2e32539c484543553c06bc76aa4db","fullName":"UserDetailsApiTests.validateGetUserDetailWithoutEmailReturnsBadRequest","name":"Validate GET User Detail without email parameter returns 400","status":"passed","testResultsByEnv":{"default":"853ecc29716f34f3319cd2371989d0f3"}}

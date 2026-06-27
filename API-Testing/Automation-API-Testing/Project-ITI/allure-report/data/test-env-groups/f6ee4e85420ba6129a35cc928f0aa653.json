@@ -1,0 +1,1 @@
+{"id":"f6ee4e85420ba6129a35cc928f0aa653","fullName":"ProductsApiTests.validateSearchProductWithoutSearchProductParameterReturnsBadRequest","name":"Validate POST Search Product without search_product parameter returns 400","status":"passed","testResultsByEnv":{"default":"fa5247219cfd2be1f94f548e192075a7"}}

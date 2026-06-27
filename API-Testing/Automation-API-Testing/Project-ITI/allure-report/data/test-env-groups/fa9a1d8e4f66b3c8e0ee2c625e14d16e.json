@@ -1,0 +1,1 @@
+{"id":"fa9a1d8e4f66b3c8e0ee2c625e14d16e","fullName":"CreateAccountApiTests.validateCreateAccountWithoutZipcodeReturnsError","name":"Validate POST Create Account without zipcode returns error","status":"passed","testResultsByEnv":{"default":"147780635f858480a9a8121ef9ee57a6"}}

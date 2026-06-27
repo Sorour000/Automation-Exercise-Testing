@@ -1,0 +1,1 @@
+{"id":"cfa0f56e2807e4a0d9cddf0b4bd80e46","fullName":"ProductsApiTests.validatePostToProductsListReturnsMethodNotSupported","name":"Validate POST to Products List returns 405 - method not supported","status":"passed","testResultsByEnv":{"default":"6633f04bf37abe60de4eafe07c88bc1b"}}

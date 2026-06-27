@@ -1,0 +1,1 @@
+{"id":"da5c6f0329bf2508d3bcce082c7f909b","fullName":"LoginApiTests.validateDeleteToVerifyLoginReturnsMethodNotSupported","name":"Validate DELETE to Verify Login returns 405 - method not supported","status":"passed","testResultsByEnv":{"default":"1e87858235e42a16bb45e574c505bf2d"}}

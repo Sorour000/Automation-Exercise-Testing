@@ -1,0 +1,1 @@
+{"id":"baedcdd7cab6b797a452c32c76e362c3","fullName":"CreateAccountApiTests.validateCreateAccountWithoutAddress1ReturnsError","name":"Validate POST Create Account without address1 returns error","status":"passed","testResultsByEnv":{"default":"41099e41726381f1cf0f05afe25d2659"}}

@@ -1,0 +1,1 @@
+{"id":"f15c315657563fb466348afe0371ec3c","fullName":"CreateAccountApiTests.validateCreateAccountWithoutCityReturnsError","name":"Validate POST Create Account without city returns error","status":"passed","testResultsByEnv":{"default":"e3b4221b83bb17ac8d29ae06257666fc"}}

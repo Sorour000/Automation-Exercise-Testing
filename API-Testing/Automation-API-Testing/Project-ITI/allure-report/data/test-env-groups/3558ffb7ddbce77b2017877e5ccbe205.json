@@ -1,0 +1,1 @@
+{"id":"3558ffb7ddbce77b2017877e5ccbe205","fullName":"CreateAccountApiTests.verifyCreateAccountWithoutAddress2ReturnsCreated","name":"Verify POST Create Account without address2 returns 201","status":"passed","testResultsByEnv":{"default":"394435b85f99ac42438f6d0c6259f956"}}

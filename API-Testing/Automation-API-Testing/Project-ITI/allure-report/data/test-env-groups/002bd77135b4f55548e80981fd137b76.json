@@ -1,0 +1,1 @@
+{"id":"002bd77135b4f55548e80981fd137b76","fullName":"UserDetailsApiTests.validateGetUserDetailWithNonExistingEmailReturnsNotFound","name":"Validate GET User Detail with non-existing email returns 404","status":"passed","testResultsByEnv":{"default":"f91f1bb4b326269eefdd7a0085b7d014"}}

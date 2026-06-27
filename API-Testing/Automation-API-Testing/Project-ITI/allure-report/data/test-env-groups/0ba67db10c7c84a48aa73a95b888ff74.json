@@ -1,0 +1,1 @@
+{"id":"0ba67db10c7c84a48aa73a95b888ff74","fullName":"CreateAccountApiTests.validateCreateAccountWithSpacesInMobileNumberReturnsError","name":"Validate POST Create Account with spaces in mobile number returns error","status":"failed","testResultsByEnv":{"default":"cdcf2229d9301b95ac7af0640083464f"}}

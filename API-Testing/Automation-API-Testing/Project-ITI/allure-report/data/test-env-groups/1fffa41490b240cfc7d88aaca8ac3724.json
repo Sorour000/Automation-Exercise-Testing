@@ -1,0 +1,1 @@
+{"id":"1fffa41490b240cfc7d88aaca8ac3724","fullName":"CreateAccountApiTests.verifyCreateAccountWithValidMandatoryFieldsReturnsCreated","name":"Verify POST Create Account with all valid mandatory fields returns 201","status":"passed","testResultsByEnv":{"default":"8a7bd03f8777d328706d7598dedfd1e2"}}

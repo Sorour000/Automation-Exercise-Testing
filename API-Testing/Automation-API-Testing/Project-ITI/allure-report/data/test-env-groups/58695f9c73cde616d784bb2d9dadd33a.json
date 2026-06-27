@@ -1,0 +1,1 @@
+{"id":"58695f9c73cde616d784bb2d9dadd33a","fullName":"LoginApiTests.validateLoginWithoutEmailReturnsBadRequest","name":"Validate POST Login without email parameter returns 400","status":"passed","testResultsByEnv":{"default":"10b3352ce5810017298a695bf96b1134"}}

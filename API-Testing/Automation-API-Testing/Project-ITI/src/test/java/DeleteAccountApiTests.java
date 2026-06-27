@@ -9,9 +9,10 @@ public class DeleteAccountApiTests {
 
 @Test(description = "Verify DELETE Account with valid credentials returns 200")
    public void verifyDeleteAccountWithValidCredentialsReturnsSuccess(){
+//   TC37
    String response = given()
            .baseUri("https://automationexercise.com/api")
-           .formParam("email","abanob.soror2017@gmail.com")
+           .formParam("email","abanob.soror2015@gmail.com")
            .formParam("password","123")
            .when()
            .delete("/deleteAccount")
@@ -28,6 +29,7 @@ public class DeleteAccountApiTests {
 
 @Test(description = "Validate DELETE Account with incorrect password returns error")
    public void validateDeleteAccountWithIncorrectPasswordReturnsError(){
+//   TC38
    String response = given()
            .baseUri("https://automationexercise.com/api")
            .formParam("email","abanob.soror2017@gmail.com")

@@ -1,0 +1,1 @@
+{"id":"3824cc5a8b400a3f8d25416c400f8989","fullName":"LoginApiTests.validateLoginWithInvalidEmailReturnsUserNotFound","name":"Validate POST Login with invalid email returns 404 - User not found","status":"passed","testResultsByEnv":{"default":"cf838663095d67e87a0415aa1d3e331c"}}

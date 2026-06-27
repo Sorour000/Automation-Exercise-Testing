@@ -1,0 +1,1 @@
+{"id":"3c98136669cc2cd85ab607f421dccdf4","fullName":"LoginApiTests.verifyLoginWithValidCredentialsReturnsUserExists","name":"Verify POST Login with valid email and password returns 200 - User exists","status":"passed","testResultsByEnv":{"default":"df36da52440c51163aed0d9873fcf1ea"}}

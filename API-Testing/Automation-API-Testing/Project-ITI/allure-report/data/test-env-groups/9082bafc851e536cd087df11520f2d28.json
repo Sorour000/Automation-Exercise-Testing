@@ -1,0 +1,1 @@
+{"id":"9082bafc851e536cd087df11520f2d28","fullName":"CreateAccountApiTests.validateCreateAccountWithoutStateReturnsError","name":"Validate POST Create Account without state returns error","status":"passed","testResultsByEnv":{"default":"f0194c8c53c0d183eaf225c74c20cb0d"}}

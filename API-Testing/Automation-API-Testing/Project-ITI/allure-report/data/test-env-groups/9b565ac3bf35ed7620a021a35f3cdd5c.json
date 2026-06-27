@@ -1,0 +1,1 @@
+{"id":"9b565ac3bf35ed7620a021a35f3cdd5c","fullName":"ProductsApiTests.verifyGetAllProductsListReturnsProductsData","name":"Verify GET All Products List returns 200 with products data","status":"passed","testResultsByEnv":{"default":"20a4e75632f7c9e69562876c9c7e774b"}}

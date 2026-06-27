@@ -1,0 +1,1 @@
+{"id":"a199e8a968063c9444278b6c0f946aa4","fullName":"CreateAccountApiTests.validateCreateAccountWithoutLastnameReturnsError","name":"Validate POST Create Account without lastname returns error","status":"passed","testResultsByEnv":{"default":"865b7467fecdf7ec2ee3afba52a803c1"}}
