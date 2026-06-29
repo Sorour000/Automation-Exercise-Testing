@@ -1,15 +1,15 @@
+import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class UpdateAccountApiTests {
+public class UpdateAccountApiTests  extends BaseTest {
 
 @Test(description = "Verify PUT Update Account with all valid fields returns 200")
   public void  verifyUpdateAccountWithAllValidFieldsReturnsSuccess(){
 //    TC 35
   String response = given()
-          .baseUri("https://automationexercise.com/api")
           .formParam("name", "Mina Saber")
           .formParam("email", "abanob.soror2017@gmail.com")
           .formParam("password", "123")
@@ -44,7 +44,6 @@ System.out.println(response);
 
 //    TC 36
   String response = given()
-          .baseUri("https://automationexercise.com/api")
           .formParam("name", "Mina Saber")
           .formParam("email", "abanob.soror2017@gmail.com")
 //          .formParam("password", "123")

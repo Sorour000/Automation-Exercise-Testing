@@ -1,15 +1,15 @@
+import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class LoginApiTests {
+public class LoginApiTests  extends BaseTest {
 
 @Test(description = "Verify POST Login with valid email and password returns 200 - User exists")
   public void verifyLoginWithValidCredentialsReturnsUserExists(){
 //  TC 07
   String response = given()
-          .baseUri("https://automationexercise.com/api")
           .formParam("email","abanob.soror2017@gmail.com")
           .formParam("password", "123")
           .when()
@@ -27,7 +27,6 @@ public class LoginApiTests {
     public void validateLoginWithoutEmailReturnsBadRequest(){
 //      TC 08
       String response = given()
-              .baseUri("https://automationexercise.com/api")
               .formParam("password", "123")
               .when()
               .post("/verifyLogin")
@@ -44,9 +43,7 @@ public class LoginApiTests {
   public void validateLoginWithInvalidEmailReturnsUserNotFound(){
 //      TC 09
       String response = given()
-              .baseUri("https://automationexercise.com/api")
               .formParam("email","abanob.soror@gmail.com")
-
               .formParam("password", "123")
               .when()
               .post("/verifyLogin")
@@ -64,7 +61,6 @@ public class LoginApiTests {
 
 //    TC 10
       String response = given()
-              .baseUri("https://automationexercise.com/api")
               .formParam("email","abanob.soror2017@gmail.com")
               .formParam("password", "12345")
               .when()
@@ -81,7 +77,6 @@ public class LoginApiTests {
   public void validateDeleteToVerifyLoginReturnsMethodNotSupported(){
 //    TC 11
       String response = given()
-              .baseUri("https://automationexercise.com/api")
               .formParam("email","abanob.soror2017@gmail.com")
               .formParam("password", "123")
               .when()

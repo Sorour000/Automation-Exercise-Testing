@@ -1,3 +1,4 @@
+import base.BaseTest;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -5,13 +6,12 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 
 
-public class DeleteAccountApiTests {
+public class DeleteAccountApiTests  extends BaseTest {
 
 @Test(description = "Verify DELETE Account with valid credentials returns 200")
    public void verifyDeleteAccountWithValidCredentialsReturnsSuccess(){
 //   TC37
    String response = given()
-           .baseUri("https://automationexercise.com/api")
            .formParam("email","abanob.soror2015@gmail.com")
            .formParam("password","123")
            .when()
@@ -31,7 +31,6 @@ public class DeleteAccountApiTests {
    public void validateDeleteAccountWithIncorrectPasswordReturnsError(){
 //   TC38
    String response = given()
-           .baseUri("https://automationexercise.com/api")
            .formParam("email","abanob.soror2017@gmail.com")
            .formParam("password","123456")
            .when()

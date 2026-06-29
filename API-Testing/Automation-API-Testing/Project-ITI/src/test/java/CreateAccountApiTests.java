@@ -1,15 +1,15 @@
+import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class CreateAccountApiTests {
+public class CreateAccountApiTests  extends BaseTest {
     @Test(description = "Verify POST Create Account with all valid mandatory fields returns 201")
     public void verifyCreateAccountWithValidMandatoryFieldsReturnsCreated() {
 //    TC 12
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
 //                .formParam("email", "abanob.soror2015@gmail.com")
                 .formParam("email", email)
@@ -43,7 +43,6 @@ public class CreateAccountApiTests {
 // TC 13
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
 //                .formParam("password", "123")
@@ -76,7 +75,6 @@ public class CreateAccountApiTests {
 // TC 14
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
                 .formParam("password", "123")
@@ -110,7 +108,6 @@ public class CreateAccountApiTests {
 // TC 15
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
                 .formParam("password", "123")
@@ -144,7 +141,6 @@ public class CreateAccountApiTests {
 // TC 16
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
                 .formParam("password", "123")
@@ -178,7 +174,6 @@ public class CreateAccountApiTests {
 // TC 17
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
                 .formParam("password", "123")
@@ -213,7 +208,6 @@ public class CreateAccountApiTests {
 // TC 18
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
                 .formParam("password", "123")
@@ -248,7 +242,6 @@ public class CreateAccountApiTests {
         // TC 19
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
                 .formParam("password", "123")
@@ -282,7 +275,6 @@ public class CreateAccountApiTests {
 // TC 20
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
                 .formParam("password", "123")
@@ -316,7 +308,6 @@ public class CreateAccountApiTests {
 // TC 21
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
                 .formParam("password", "123")
@@ -352,7 +343,6 @@ public class CreateAccountApiTests {
 // TC 22
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
                 .formParam("password", "123")
@@ -389,7 +379,6 @@ public class CreateAccountApiTests {
 // TC 23
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
                 .formParam("password", "123")
@@ -425,7 +414,6 @@ public class CreateAccountApiTests {
 // TC 24
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
                 .formParam("password", "123")
@@ -459,7 +447,6 @@ public class CreateAccountApiTests {
 // TC 25
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
                 .formParam("password", "123")
@@ -494,7 +481,6 @@ public class CreateAccountApiTests {
 // TC 26
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
                 .formParam("password", "123")
@@ -530,7 +516,6 @@ public class CreateAccountApiTests {
 // TC 27
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
                 .formParam("password", "123")
@@ -564,7 +549,6 @@ public class CreateAccountApiTests {
         // TC 28
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
                 .formParam("password", "123")
@@ -598,7 +582,6 @@ public class CreateAccountApiTests {
         // TC 29
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
                 .formParam("password", "123")
@@ -632,7 +615,6 @@ public class CreateAccountApiTests {
         // TC 30
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
                 .formParam("password", "123")
@@ -666,7 +648,6 @@ public class CreateAccountApiTests {
         // TC 33
         String email = "abanob" + System.currentTimeMillis() + "@gmail.com";
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .formParam("name", "Abanob Sorour")
                 .formParam("email", email)
                 .formParam("password", "123")

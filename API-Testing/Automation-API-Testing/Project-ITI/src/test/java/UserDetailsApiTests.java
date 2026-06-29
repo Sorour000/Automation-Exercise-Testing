@@ -1,15 +1,15 @@
+import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class UserDetailsApiTests {
+public class UserDetailsApiTests  extends BaseTest {
 
   @Test(description = "Verify GET User Detail by valid email returns 200 with user data")
   public void verifyGetUserDetailByValidEmail() {
 //    TC 32
     String response = given()
-            .baseUri("https://automationexercise.com/api")
             .queryParam("email", "abanob.soror2017@gmail.com")
             .when()
             .get("/getUserDetailByEmail")
@@ -31,7 +31,6 @@ public class UserDetailsApiTests {
   public void validateGetUserDetailWithNonExistingEmailReturnsNotFound(){
 //    TC 33
       String response = given()
-              .baseUri("https://automationexercise.com/api")
               .queryParam("email", "abanob.soror@gmail.com")
               .when()
               .get("/getUserDetailByEmail")
@@ -52,14 +51,12 @@ public class UserDetailsApiTests {
   public void validateGetUserDetailWithoutEmailReturnsBadRequest(){
 //    TC 34
       String response = given()
-              .baseUri("https://automationexercise.com/api")
               .when()
               .get("/getUserDetailByEmail")
               .then()
               .statusCode(200)
               .extract()
               .asString();
-
       Assert.assertTrue(response.contains("400"));
       Assert.assertTrue(response.contains("email parameter is missing"));
       System.out.println(response);

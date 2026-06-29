@@ -1,3 +1,4 @@
+import base.BaseTest;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.Assert;
@@ -7,11 +8,11 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.greaterThan;
 
-public class ProductsApiTests {
+public class ProductsApiTests  extends BaseTest {
     @Test(description = "Verify GET All Products List returns 200 with products data")
     public void verifyGetAllProductsListReturnsProductsData(){
 //        TC 01
-            given().baseUri("https://automationexercise.com/api")
+            given()
                     .when()
                     .get("/productsList")
                     .then().statusCode(200).body("products.size()",greaterThan(0));
@@ -21,7 +22,6 @@ public class ProductsApiTests {
     public void validatePostToProductsListReturnsMethodNotSupported() {
 //        TC 02
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .when()
                 .post("/productsList")
                 .then()
@@ -37,7 +37,6 @@ public class ProductsApiTests {
     public void verifySearchProductWithValidKeywordReturnsResults(){
 //          TC 03
         String response = given()
-                .baseUri("https://automationexercise.com/api").formParam("search_product","Tshirt")
                 .when()
                 .post("/searchProduct")
                 .then()
@@ -53,7 +52,6 @@ public class ProductsApiTests {
     public void validateSearchProductWithoutSearchProductParameterReturnsBadRequest(){
 //          TC 04
         String response = given()
-                .baseUri("https://automationexercise.com/api")
                 .when()
                 .post("/searchProduct")
                 .then()

@@ -1,3 +1,4 @@
+import base.BaseTest;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -6,14 +7,13 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.greaterThan;
 
-public class BrandsApiTests {
+public class BrandsApiTests  extends BaseTest {
 
 
 @Test(description = "")
    public void verifyGetAllBrandsListReturnsBrandsData(){
 //          TC 05
    String response = given()
-           .baseUri("https://automationexercise.com/api")
            .when()
            .get("/brandsList")
            .then()
@@ -36,7 +36,6 @@ public class BrandsApiTests {
    public void validatePutToBrandsListReturnsMethodNotSupported(){
 //          TC 06
    String response = given()
-           .baseUri("https://automationexercise.com/api")
            .when()
            .put("/brandsList")
            .then()
